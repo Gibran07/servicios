@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Posada Paraíso</title>
+    <link rel="preload" href="Normalize.css" as="style">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+    <link rel="preload" href="Styles.css" as="style">
+    <link href="Styles.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+        <h1 class="titulo stroke">Hotel Posada Paraíso</h1>
+        </div>
+        
+    </header>
+
+    <div class="nav-bg">
+
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html"> Inicio </a>
+            <a href="servicios.html"> Servicios </a>
+            <a href="personal.html"> Nosotros </a>
+            <a href="galeria.html"> Galería </a>
+            <a href="formulario.html"> Contáctanos </a>    
+        </nav>
+
+    </div>
+    
+    <!--CARRUSEL-->
+    
+    <main class="contenedor sombra">
+        <h2 class="subtitulo">Nuestros servicios</h2>
+        <div class="card-group">
+            <div class="card">
+              <img src="perfil5.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card">
+              <img src="perfil10.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card">
+              <img src="perfil11.jpg" class="card-img-top" alt="...">
+            </div>
+        </div>
+        <h2 class="subtitulo letra-centro">Reservaciones</h2>
+        <p class="letra-personal">Lo que mejor nos caracteriza como hotel es la alta satisfacción que ofrecemos a nuestros clientes siempre que se hospedan
+            en nuestras instalaciones. El evento de reservaciones se lleva a cabo de una manera rápida y eficaz mediante software especializado, que permite
+            colocar al hotel en la vanguardia de implementación de tecnología, optimizando tiempos y recursos.
+        </p>
+
+        <div class="card-group">
+            <div class="card">
+              <img src="perfil5.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card">
+              <img src="perfil10.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card">
+              <img src="perfil11.jpg" class="card-img-top" alt="...">
+            </div>
+        </div>
+        <h2 class="subtitulo letra-centro">Alimentos y bebidas</h2>
+        <p class="letra-personal">En nuestras instalaciones tenemos a los mejores cocineros y cocineras de la región para deleitar el paladar todos los dias
+            del año, pero siempre manteniendo los estándares para ofrecer servicio y productos de alta calidad.
+        </p>
+
+        <div class="card-group">
+            <div class="card">
+              <img src="perfil5.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card">
+              <img src="perfil10.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card">
+              <img src="perfil11.jpg" class="card-img-top" alt="...">
+            </div>
+        </div>
+        <h2 class="subtitulo letra-centro">Tours</h2>
+        <p class="letra-personal">Si no sabes que visitar, permitenos presentarte la cabina de tours donde te llevaremos a conocer cada rincón de Lázaro Cárdenas
+        , viviendo a sangre propia todas las experiencias que te esperan. Sol, playa, cenotes, tirolesa, senderismo, kayak, ciclismo y entre muchas otras
+        actividades más en la qeu puedes vivir aventuras.
+        </p>
+
+        <center>
+          <h2>¿Que otro servicio te gustaría tener?</h2>
+      
+          <input id="palabras" class="input-cambio letra" type="text" placeholder="Ingresa el servicio aquí">
+          <br>
+          <button onclick="agregar()" class="boton">Agregar Palabra</button>
+          <hr>
+          <div class="letra-centro">Total de palabras ingresadas:
+              <input class="input-cambio" id="contador" type="text">
+          </div>
+          <br>
+          <div class="letra-centro">Lista de palabras ingresadas:
+              <input class="input-cambio" id="listado" type="text">
+          </div>
+          <br>
+          <section>
+              <div class="reloj">
+                  <span id="tiempo">00 : 00 : 00</span>
+              </div>
+          </section>
+      </center>
+
+        <script src="acciones.js"></script>    
+    </main>
+    
+    <footer class="footer">
+        <div class="nav-bg">
+            <p>Este es una idea de pre-diseño de nuestro proyecto integrador Kotler 6B</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="3" y="5" width="18" height="14" rx="4" />
+                <path d="M10 9l5 3l-5 3z" />
+            </svg>
+        </div>
+    </footer>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

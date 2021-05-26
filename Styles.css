@@ -1,0 +1,340 @@
+
+html{/*USO*/
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{/*USO*/
+    box-sizing: inherit;
+}
+
+body{/*USO*/
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image:linear-gradient(to top,#DFE9F3 0%, #FFF 100%);
+}
+
+.sombra{ /*USO*/
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(194,194,194,0.67);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(194,194,194,0.67);
+    box-shadow: 0px 5px 15px 0px rgba(194,194,194,0.67);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+h3{/*USO*/
+    font-size: 1.8rem;
+}
+
+h1,h2,h3{/*USO*/
+    text-align: center;
+}
+
+.stroke { /*USO*/
+    text-align:center;
+    color: #fff;
+    background: #eee;
+    font-family: impact;
+    font-size: 40px;
+    letter-spacing: 0;
+    text-shadow: -3px -3px 3px #0097a7, 3px -3px 3px #0097a7, -3px 3px 3px #0097a7, 3px 3px 3px #0097a7;
+}
+
+.titulo{ /*USO*/
+    background-color: #ffc107;
+    color:#fff;
+    font-size: 45px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subtitulo{/*USO*/
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenedor{ /*USO*/
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.boton{/*USO*/
+    background-color: #0097a7;
+    color: #fff;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+@media (min-width: 768px) {/*USO*/
+    .boton{
+        width: auto;
+    }
+}
+
+.boton:hover{/*USO*/
+    cursor: pointer;
+}
+
+.servicios {/*USO*/
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.nav-bg{ /*USO*/
+    background-color: #0097a7;
+}
+
+.navegacion-principal{ /*USO*/
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media (min-width: 768px) {/*USO*/
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion-principal a{/*USO*/
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover{/*USO*/
+    background-color: #ffc107;
+    color: #000;
+}
+
+.hero{/*USO*/
+    background-image: url(imagennueva.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 410px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-hero{/*USO*/
+    position: absolute; 
+    background-color: rgba(0,0,0, .6);
+    width: 100%;
+    height: 100%;
+
+    display: flex; /*ALINEAR VERTICALMENTE USABLE PARA CUALQUIER PROYECTO*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centrar{/*USO*/
+    display: flex; /*ALINEAR VERTICALMENTE USABLE PARA CUALQUIER PROYECTO*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p {/*USO*/
+    color: #fff;
+}
+
+.servicios{/*USO*/
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 1rem;
+}
+
+.servicio{/*USO*/
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.servicio h3{/*USO*/
+    color: #0097a7;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.servicio p{/*USO*/
+    line-height: 2;
+    text-align:justify;
+}
+
+.servicio .iconos{/*USO*/
+    height: 13rem;
+    width: 13rem;
+    background-color: #ffc107;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.formulario{/*USO*/
+    background-color: gray;
+    width: min(60rem, 100%);
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{/*USO*/
+    border: none;
+}
+
+.formulario legend{/*USO*/
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #ffc107;
+}
+
+.campo{/*USO*/
+    margin-bottom: 1rem;
+}
+
+.campo label{/*USO*/
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+@media (min-width: 768px) {/*USO*/
+    :is(.campo) :is( 
+        input[type="text"], 
+        input[type="text"],  
+        input[type="tel"],  
+        input[type="mail"] , 
+        textarea ) {
+        flex: 1;
+    }
+}
+
+.campo textarea{/*USO*/
+    height: 20rem;
+}
+
+.input-cambio{ /*USO*/
+    width: 50%;
+    border: aqua;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background-color:#ffc107;   
+}
+
+.input-text{/*USO*/
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.footer{/*USO*/
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .nosotros{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .nosotros__imagen{
+        grid-column: 2/3;
+    }
+}
+
+@media (min-width: 768px) {
+    .bloques {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.letra { /*USO*/
+    font-size: 13px;
+}
+
+.letra-formulario{ /*USO*/
+    font-size: 17px;
+}
+
+.letra-centro{ /*USO*/
+    font-size: 17px;
+    text-align:center;
+    font-weight: 600;
+}
+
+.letra-personal { /*USO*/
+    font-size: 17px;
+    text-align:justify;
+}
+
+.titulo-personal{ /*USO*/
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#ffc107;
+    text-align:center;
+    letter-spacing: 0;
+    
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+#galeria .col-lg-4{ /*USO*/
+    margin: 0!important;
+    padding: 25px;
+}
+
+#galeria img{ /*USO*/
+    width: 100%;
+    height: 250px;
+}
+
+#galeria img:hover{ /*USO*/
+    border: 5px solid #f7f7f7;
+}
+
+.reloj { /*USO*/
+	display:inline-block;
+	background:#d1dae3;
+	color:#71767f;
+	padding:30px;
+	font-weight:bold;
+	font-size:40px;
+	border-radius:4px;
+	border: 4px solid #cad3dc;
+	box-shadow: -8px -8px 15px rgba(255,255,255,0.5),
+				10px 10px 10px rgba(0,0,0,0.1),
+				inset -8px -8px 15px rgba(255,255,255,0.5),
+				inset 10px 10px 10px rgba(0,0,0,0.1);
+}
